@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="62d110da-4342-4c6a-a77f-e4ce10b22418" Publisher="CN=대열" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>MSPhoto</DisplayName>
+    <PublisherDisplayName>대열</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MSPhoto.App">
+      <VisualElements DisplayName="포토앱" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="MSPhoto" ForegroundText="light" BackgroundColor="#ffb900">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+</Package>

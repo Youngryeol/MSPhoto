@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="MSPhoto.View.CompletePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MSPhoto.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:xpg="using:XPG.Extensions"
+    xmlns:model="using:MSPhoto.Model"
+    mc:Ignorable="d"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Complete}">
+
+    <Page.Resources>
+        <Storyboard x:Name="sbCompleted" model:StoryboardAttached.IsBegin="{Binding IsSoundPlay}">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="gridCompleted">
+        		<SplineDoubleKeyFrame KeyTime="0" Value="950"/>
+        		<SplineDoubleKeyFrame KeyTime="0:0:0.05" Value="950"/>
+        		<SplineDoubleKeyFrame KeyTime="0:0:2.7" Value="0"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Image_Instax">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Image_Notice_End">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+    
+    <Viewbox>
+		<Grid Background="#FFFFB900" Width="1920" Height="1080">
+			<xpg:Extensions.Commands>
+				<xpg:Command EventName="PointerPressed" Binding="{Binding PointerPressedCommand}"/>
+			</xpg:Extensions.Commands>
+			<MediaElement HorizontalAlignment="Left" VerticalAlignment="Top" AutoPlay="True" Source="ms-appx:///Assets/Sounds/Polaloid.wav"/>
+			<Image x:Name="Background_End" Source="Assets///Images/End/Background_End.png"/>
+			<Image x:Name="Image_Notice_End" Source="ms-appx:///Assets/Images/End/Image_Notice_End.png" Margin="0,450,142,0" Width="778" Height="231" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+			<Image x:Name="Image_Instax" Source="ms-appx:///Assets/Images/End/Image_Instax.png" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="1020" Height="150"/>
+			<Grid x:Name="gridCompleted" Margin="-396,0,396,0" RenderTransformOrigin="0.5,0.5" Canvas.ZIndex="-5">
+				<Grid.RenderTransform>
+					<CompositeTransform TranslateY="950"/>
+				</Grid.RenderTransform>
+				<Grid Width="1920" Height="1080" Background="#FF747474" HorizontalAlignment="Left">
+					<Grid.Clip>
+						<RectangleGeometry Rect="665,65,590,880"/>
+					</Grid.Clip>
+					<Image Source="{Binding CaptureImage}" RenderTransformOrigin="0.5,0.5">
+						<Image.RenderTransform>
+							<CompositeTransform ScaleX="-1"/>
+						</Image.RenderTransform>
+					</Image>
+				</Grid>
+				<Image Source="ms-appx:///Assets/Images/End/Image_Frame_Shoot.png" Stretch="Fill" Width="656" Height="1028" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="632,30,0,0"/>
+			</Grid>
+		</Grid>
+	</Viewbox>
+</Page>

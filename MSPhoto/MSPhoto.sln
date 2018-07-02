@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSPhoto", "MSPhoto\MSPhoto.csproj", "{DB829F5D-B659-462F-BC1D-21FCF726441C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSPhotoServer", "MSPhotoServer\MSPhotoServer.csproj", "{47F8F070-1957-4E6F-9F26-DAD1D12B3738}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://isdev.vi-nyl.com:8080/tfs/idxcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MSPhoto\\MSPhoto.csproj
+		SccProjectName1 = MSPhoto
+		SccLocalPath1 = MSPhoto
+		SccProjectUniqueName2 = MSPhotoServer\\MSPhotoServer.csproj
+		SccProjectName2 = MSPhotoServer
+		SccLocalPath2 = MSPhotoServer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|ARM.Build.0 = Debug|ARM
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|ARM.Deploy.0 = Debug|ARM
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|x64.ActiveCfg = Debug|x64
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|x64.Build.0 = Debug|x64
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|x64.Deploy.0 = Debug|x64
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|x86.ActiveCfg = Debug|x86
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|x86.Build.0 = Debug|x86
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Debug|x86.Deploy.0 = Debug|x86
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|ARM.ActiveCfg = Release|ARM
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|ARM.Build.0 = Release|ARM
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|ARM.Deploy.0 = Release|ARM
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|x64.ActiveCfg = Release|x64
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|x64.Build.0 = Release|x64
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|x64.Deploy.0 = Release|x64
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|x86.ActiveCfg = Release|x86
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|x86.Build.0 = Release|x86
+		{DB829F5D-B659-462F-BC1D-21FCF726441C}.Release|x86.Deploy.0 = Release|x86
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Release|ARM.ActiveCfg = Release|Any CPU
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Release|x64.ActiveCfg = Release|Any CPU
+		{47F8F070-1957-4E6F-9F26-DAD1D12B3738}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
